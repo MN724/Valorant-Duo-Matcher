@@ -75,3 +75,7 @@ end
 gem 'bootstrap-sass'
 
 gem 'sass-rails'
+
+gem 'bootstrap'
+
+gem 'jquery-rails'
