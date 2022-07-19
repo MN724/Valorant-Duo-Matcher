@@ -15,34 +15,45 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Valorant Duo Match</a>
+        <%= link_to "/", class: "navbar-brand" do %>
+          <i>Valorant Duo Matcher</i>
+        <% end %>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <%= link_to "/", class: "nav-link acitve" do %>
+                Home
+              <% end %>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <%= link_to "/about", class: "nav-link" do %>
+                About
+              <% end %>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Testimonials</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <%= link_to "/contact-us", class: "nav-link" do %>
+                Contact Us
+              <% end %>
             </li>
           </ul>
           <ul class="navbar-nav nav-account me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Log In</a>
+              <%= link_to "/log_in", class: "nav-link" do %>
+                Log In
+              <% end %>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sign Up</a>
+              <%= link_to "/sign-up", class: "nav-link" do %>
+                Sign Up
+              <% end %>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Guest</a>
+              <%= link_to "/guest", class: "nav-link" do %>
+                Guest
+              <% end %>
             </li>
           </ul>
         </div>
